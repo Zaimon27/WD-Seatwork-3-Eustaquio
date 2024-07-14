@@ -1,77 +1,202 @@
-* {
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-a {
+h1, p {
+    text-align: center;
+    margin: 20px;
+}
+
+footer {
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #ff2800; 
+    border-top: 5px solid #fff; 
+}
+
+.footer-logo {
+    text-align: left;
+    flex: 1;
+    margin-bottom: 10px;
+}
+
+.footer-logo img {
+    max-width: 50px;
+}
+
+.footer-content, .footer-contentB, .footer-contentC, .footer-contentD, .footer-contentE {
+    flex: 1;
+    margin: 10px 10px;
+    min-width: 150px;
+}
+
+.footer-content h3, .footer-contentB h3, .footer-contentC h3, .footer-contentD h3, .footer-contentE h3 {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    background-color: #fff;
+    color: #ff2800;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.footer-content ul, .footer-contentB ul, .footer-contentC ul, .footer-contentD ul, .footer-contentE ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content ul li, .footer-contentB ul li, .footer-contentC ul li, .footer-contentD ul li, .footer-contentE ul li {
+    margin-bottom: 5px;
+}
+
+.footer-content ul li a, .footer-contentB ul li a, .footer-contentC ul li a, .footer-contentD ul li a, .footer-contentE ul li a {
+    color: #fff;
     text-decoration: none;
 }
 
-/* Dev */
-section.design-one,
-section.design-one * {
-    /* outline: 1px dashed black; */
+.footer-content ul li a:hover, .footer-contentB ul li a:hover, .footer-contentC ul li a:hover, .footer-contentD ul li a:hover, .footer-contentE ul li a:hover {
+    text-decoration: underline;
 }
 
-/* Dep */
+.footer-content p, .footer-contentB p, .footer-contentC p, .footer-contentD p, .footer-contentE p {
+    font-size: 1em;
+}
 
-body {
+.social-icons {
     display: flex;
-    flex-direction: column;
+    gap: 5px;
+}
+
+.social-icons li {
+    list-style: none;
+}
+
+.social-icons li a {
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.social-icons li a:hover {
+    color: #ccc;
+}
+
+.searchbarD form {
+    display: flex;
     align-items: center;
-    height: 200vh;
-    width: 100vw;
-    overflow-x: hidden;
 }
 
-section {
-    width: 100vw;
-    padding: 1rem 5vw;
-    display: flex;
-    gap: 1rem;
-    align-items: flex-end;
+.searchbarD input[type="text"] {
+    padding: 5px;
+    margin-right: 5px;
+    flex: 1;
+    border: none;
 }
 
-section.design-one {
+.searchbarD button {
+    padding: 5px 10px;
+    background-color: #fff;
+    color: #ff2800;
+    border: none;
+    cursor: pointer;
+}
+
+.searchbarD button:hover {
+    background-color: #ddd;
+}
+
+.footerE .bottomE {
     display: flex;
-    background: linear-gradient(75deg , rgb(159, 255, 159) 0%, rgb(219, 255, 219) 100% );
-    align-items: flex-start;
+    justify-content: space-around;
+    margin-top: 10px;
+}
 
-    & .company-logo {
-        height: 50px;
-    }
+.animatedFooter footer {
+    position: relative;
+    overflow: hidden;
+}
 
-    & .social-media {
-        display: flex;
+.animatedFooter footer:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 40, 0, 0.7); 
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+}
+
+.animatedFooter footer:hover:before {
+    background: rgba(255, 40, 0, 0.9);
+}
+
+.animatedFooter .footer-logo img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.animatedFooter footer:hover .footer-logo img {
+    transform: scale(1.1);
+}
+
+.animatedFooter .footer-contentE:hover {
+    opacity: 0.8; /* Adjust opacity for the desired effect */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.animatedFooter .footer-content h3 {
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.animatedFooter footer:hover .footer-content h3 {
+    color: #fff;
+    background-color: #ff2800;
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
-        height: 100%;
-        gap: .5rem;
-        height: 100%;
-
-        & i {
-            padding: .5rem;
-            border: 1px solid black;
-            border-radius: 50%;
-            height: 2.2rem;
-            width: 2.2rem;
-            transition: all .2s ease;
-        }
     }
 
-    & .content {
-        padding-right: 20rem;
+    .footer-content, .footer-contentB, .footer-contentC, .footer-contentD, .footer-contentE {
+        margin: 10px 0;
+        text-align: center;
     }
 
-    & .disclaimer {
-        font-size: .8rem;
-        width: 5vw;
-        display: flex;
+    .footerE .bottomE {
+        flex-direction: column;
         align-items: center;
-        height: 100%;
     }
+}
 
+.goBack {
+    text-align: center;
+    margin-top: 10px;
+}
 
+.goBack .click {
+    padding: 5px 10px;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.goBack .click a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.goBack .click:hover {
+    background-color: #555;
 }
