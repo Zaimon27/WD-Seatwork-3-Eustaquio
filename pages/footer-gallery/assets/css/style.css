@@ -1,78 +1,58 @@
+
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
     color: #333;
 }
 
-h1, p {
-    text-align: center;
-    margin: 20px;
-}
-
-footer {
+.footer {
     padding: 20px;
-    color: #fff;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    background-color: #ff2800; 
-    border-top: 5px solid #fff; 
-}
-
-.footer-logo {
-    text-align: left;
-    flex: 1;
-    margin-bottom: 10px;
+    background-color: #333;
+    color: white;
 }
 
 .footer-logo img {
-    max-width: 50px;
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
 }
 
-.footer-content, .footer-contentB, .footer-contentC, .footer-contentD, .footer-contentE {
-    flex: 1;
-    margin: 10px 10px;
-    min-width: 150px;
+.footer-content {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.footer-content h3, .footer-contentB h3, .footer-contentC h3, .footer-contentD h3, .footer-contentE h3 {
-    margin-bottom: 5px;
-    font-size: 1.2em;
-    background-color: #fff;
-    color: #ff2800;
-    padding: 5px;
-    border-radius: 3px;
+.footer-content h3 {
+    margin-top: 0;
 }
 
-.footer-content ul, .footer-contentB ul, .footer-contentC ul, .footer-contentD ul, .footer-contentE ul {
+.footer-content ul {
     list-style: none;
     padding: 0;
 }
 
-.footer-content ul li, .footer-contentB ul li, .footer-contentC ul li, .footer-contentD ul li, .footer-contentE ul li {
-    margin-bottom: 5px;
+.footer-content ul li {
+    margin: 5px 0;
 }
 
-.footer-content ul li a, .footer-contentB ul li a, .footer-contentC ul li a, .footer-contentD ul li a, .footer-contentE ul li a {
-    color: #fff;
+.footer-content ul li a {
+    color: white;
     text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
 }
 
-.footer-content ul li a:hover, .footer-contentB ul li a:hover, .footer-contentC ul li a:hover, .footer-contentD ul li a:hover, .footer-contentE ul li a:hover {
-    text-decoration: underline;
-}
-
-.footer-content p, .footer-contentB p, .footer-contentC p, .footer-contentD p, .footer-contentE p {
-    font-size: 1em;
+.footer-content ul li a:hover {
+    color: #f00; red 
+    background-color: rgba(255, 0, 0, 0.1);
 }
 
 .social-icons {
     display: flex;
-    gap: 5px;
+    justify-content: center;
+    gap: 10px;
 }
 
 .social-icons li {
@@ -80,123 +60,225 @@ footer {
 }
 
 .social-icons li a {
-    color: #fff;
-    font-size: 1.2em;
-    text-decoration: none;
+    color: white;
+    transition: color 0.3s, transform 0.3s;
 }
 
 .social-icons li a:hover {
-    color: #ccc;
+    color: #f00;
+    transform: scale(1.2);
 }
 
-.searchbarD form {
-    display: flex;
-    align-items: center;
+.designA {
+    background-color: #111;
 }
 
-.searchbarD input[type="text"] {
-    padding: 5px;
-    margin-right: 5px;
-    flex: 1;
-    border: none;
+.designB {
+    background-color: #222;
 }
 
-.searchbarD button {
-    padding: 5px 10px;
-    background-color: #fff;
-    color: #ff2800;
-    border: none;
-    cursor: pointer;
+.designC {
+    background-color: #333;
 }
 
-.searchbarD button:hover {
-    background-color: #ddd;
+.designD {
+    background-color: #444;
 }
 
-.footerE .bottomE {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 10px;
+.designE {
+    background-color: #555;
 }
 
-.animatedFooter footer {
+.designF {
+    background-color: #666;
+}
+
+.designF .footer-logo img {
+    transition: transform 0.5s;
+}
+
+.designF .footer-logo img:hover {
+    transform: rotate(360deg); 
+}
+
+.designF .footer-content ul li a {
     position: relative;
     overflow: hidden;
 }
 
-.animatedFooter footer:before {
+.designF .footer-content ul li a::before {
     content: '';
     position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #f00;
+    top: 0;
+    left: -100%;
+    transition: left 0.3s ease-in-out;
+}
+
+.designF .footer-content ul li a:hover::before {
+    left: 0;
+}
+
+.designG {
+    background-color: #777;
+}
+
+.designG .footer-logo img {
+    transition: transform 0.5s;
+}
+
+.designG .footer-logo img:hover {
+    transform: scale(1.2); 
+}
+
+.designG .footer-content ul li a {
+    position: relative;
+    overflow: hidden;
+}
+
+.designG .footer-content ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #f00;
+    bottom: 0;
+    right: -100%;
+    transition: right 0.3s ease-in-out;
+}
+
+.designG .footer-content ul li a:hover::after {
+    right: 0;
+}
+
+.designH {
+    background-color: #888;
+}
+
+.designH .footer-logo img {
+    transition: filter 0.5s;
+}
+
+.designH .footer-logo img:hover {
+    filter: brightness(1.5); 
+}
+
+.designH .footer-content ul li a {
+    position: relative;
+    overflow: hidden;
+}
+
+.designH .footer-content ul li a::before,
+.designH .footer-content ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #f00;
+    transition: width 0.3s ease-in-out;
+}
+
+.designH .footer-content ul li a::before {
     top: 0;
     left: 0;
+}
+
+.designH .footer-content ul li a::after {
+    bottom: 0;
+    right: 0;
+}
+
+.designH .footer-content ul li a:hover::before,
+.designH .footer-content ul li a:hover::after {
+    width: 100%;
+}
+
+.designI {
+    background-color: #999;
+}
+
+.designI .footer-logo img {
+    transition: transform 0.5s;
+}
+
+.designI .footer-logo img:hover {
+    transform: translateY(-10px); 
+}
+
+.designI .footer-content ul li a {
+    position: relative;
+    overflow: hidden;
+}
+
+.designI .footer-content ul li a::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: #f00;
+    top: -100%;
+    left: 0;
+    transition: top 0.3s ease-in-out;
+}
+
+.designI .footer-content ul li a:hover::before {
+    top: 0;
+}
+
+.designJ {
+    background-color: #aaa;
+}
+
+.designJ .footer-logo img {
+    transition: transform 0.5s;
+}
+
+.designJ .footer-logo img:hover {
+    transform: skewX(10deg); 
+}
+
+.designJ .footer-content ul li a {
+    position: relative;
+    overflow: hidden;
+}
+
+.designJ .footer-content ul li a::before {
+    content: '';
+    position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(255, 40, 0, 0.7); 
-    transition: all 0.3s ease-in-out;
-    z-index: -1;
+    background-color: rgba(255, 0, 0, 0.2);
+    top: 100%;
+    left: 0;
+    transition: top 0.3s ease-in-out;
 }
 
-.animatedFooter footer:hover:before {
-    background: rgba(255, 40, 0, 0.9);
-}
-
-.animatedFooter .footer-logo img {
-    transition: transform 0.3s ease-in-out;
-}
-
-.animatedFooter footer:hover .footer-logo img {
-    transform: scale(1.1);
-}
-
-.animatedFooter .footer-contentE:hover {
-    opacity: 0.8; 
-    transition: opacity 0.3s ease-in-out;
-}
-
-.animatedFooter .footer-content h3 {
-    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-}
-
-.animatedFooter footer:hover .footer-content h3 {
-    color: #fff;
-    background-color: #ff2800;
-}
-
-@media (max-width: 768px) {
-    footer {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-content, .footer-contentB, .footer-contentC, .footer-contentD, .footer-contentE {
-        margin: 10px 0;
-        text-align: center;
-    }
-
-    .footerE .bottomE {
-        flex-direction: column;
-        align-items: center;
-    }
+.designJ .footer-content ul li a:hover::before {
+    top: 0;
 }
 
 .goBack {
-    text-align: center;
-    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .goBack .click {
-    padding: 5px 10px;
-    background-color: #222;
-    color: #fff;
+    background-color: #f00;
+    color: white;
     border: none;
+    padding: 10px 20px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .goBack .click a {
-    color: #fff;
+    color: white;
     text-decoration: none;
 }
 
 .goBack .click:hover {
-    background-color: #555;
+    background-color: #d00;
 }

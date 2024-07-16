@@ -7,7 +7,7 @@ body {
   align-items: center;
   height: 100vh;
   background-image: url(../img/ferari\ background.jpg); 
-  background-size: cover; /* Adjust as needed */
+  background-size: cover; 
   background-repeat: no-repeat;
   background-position: center;
 }
