@@ -5,7 +5,6 @@
 <br />
 <div align="center">
   <a href="https://github.com/zyx-0314/">
-    <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
   </a>
   <h3 align="center">Seatwork 3: Footer & Header</h3>
 </div>
@@ -15,7 +14,7 @@
 
 <br />
 
-![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/WD-Seatwork-3)
+![](https://visit-counter.vercel.app/counter.png?page=https://github.com/Zaimon27/WD-Seatwork-3-Eustaquio)
 
 ---
 
@@ -49,8 +48,7 @@
 
 ## Overview
 
-Project demonstrate the coding of HTMl and CSS in different kinds of headers and footers in addition of animations. This is to have hands-on experience in coding and having an actual output.
-
+This project is to show the different style of headers and footer
 ### Key Components
 - Header Animation
   - Hover Effect
@@ -101,4 +99,6 @@ WD-ProjectName
 
 | Title | Purpose | Link |
 |-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| Logo | This is the logo that is use for footer design  | https://www.hiclipart.com/free-transparent-background-png-clipart-iscmq |
+| Logo | This is the logo that is use for header design  | https://ph.pinterest.com/pin/556757572669864134/|
+
