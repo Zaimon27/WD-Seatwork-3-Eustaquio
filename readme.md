@@ -4,16 +4,20 @@
 
 <br />
 <div align="center">
-  <a href="https:Zaimon27/WD-Seatwork-3-Eustaquio">
+  <a href="https://github.com/Royce012004/">
   </a>
-  <h3 align="center">Seatwork 3: Footer & Header</h3>
+<!-- TODO: Change Title to the name of the title of your Project -->
+  <h3 align="center">Seatwork 3</h3>
 </div>
+<!-- TODO: Make a short description -->
 <div align="center">
-  This is for demonstrating skills in HTML and CSS with Multiple Pages, Effects and Container Manipulations. Providing a Different Versions of Headers and Footers.
+This repository is to show the different design of header and footer
 </div>
 
 <br />
 
+<!-- TODO: Change the zyx-0314 into your github username  -->
+<!-- TODO: Change the WD-Template-Project into the same name of your folder -->
 ![](https://visit-counter.vercel.app/counter.png?page=https://github.com/Zaimon27/WD-Seatwork-3-Eustaquio)
 
 ---
@@ -21,6 +25,7 @@
 <br />
 <br />
 
+<!-- TODO: If you want to add more layers for your readme -->
 <details>
   <summary>Table of Contents</summary>
   <ol>
@@ -48,16 +53,18 @@
 
 ## Overview
 
-This project is to show the different style of headers and footer
-### Key Components
-- Header Animation
-  - Hover Effect
-  - Active Effect
-  - Multi Layer Domino Effect
-  - Not Effect
+<!-- TODO: To be changed -->
+<!-- The following are just sample -->
+Description of the project in details.
 
+The purpose of this acitivities is to show your skills for making a different style of footer and header
+### Key Components
+<!-- TODO: List of Key Components -->
+<!-- The following are just sample -->
+- MultiPage Website
 
 ### Technology
+<!-- TODO: List of Technology Used -->
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
@@ -73,7 +80,7 @@ This project is to show the different style of headers and footer
 7. File Structure to follow below.
 
 ```
-WD-ProjectName
+WD-Seatwork3
 └─ assets
 |   └─ css
 |   |   └─ style.css
@@ -82,7 +89,7 @@ WD-ProjectName
 |   └─ js
 |       └─ script.js
 └─ pages
-|  └─ pageName
+|  └─ header/footer
 |     └─ assets
 |     |  └─ css
 |     |  |  └─ style.css
@@ -97,8 +104,8 @@ WD-ProjectName
 
 ## Resources
 
+<!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Logo | This is the logo that is use for footer design  | https://www.hiclipart.com/free-transparent-background-png-clipart-iscmq |
-| Logo | This is the logo that is use for header design  | https://ph.pinterest.com/pin/556757572669864134/|
-
+| Ferrari logo | used for the ferarri logo  footer design|https://ph.pinterest.com/pin/556757572669864134/ |
+|  Mercedes Logo | used the mercedes logo for header design |https://www.hiclipart.com/free-transparent-background-png-clipart-iscmq |
