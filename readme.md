@@ -4,7 +4,7 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/zyx-0314/">
+  <a href="https:Zaimon27/WD-Seatwork-3-Eustaquio">
   </a>
   <h3 align="center">Seatwork 3: Footer & Header</h3>
 </div>
